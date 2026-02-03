@@ -21,10 +21,10 @@ OMEGA_HOLIDAY = 0.6896214708   # 节假日权重
 @st.cache_data
 def load_prob_tables():
     # 直接读取同目录下的Excel文件（部署后和py文件在同一文件夹）
-    weekday_df = pd.read_excel("LUCK/星期好日子概率.xlsx")
-    day_df = pd.read_excel("LUCK/日期好日子概率.xlsx")
-    moon_df = pd.read_excel("LUCK/月相好日子概率.xlsx")
-    holiday_df = pd.read_excel("LUCK/节假日好日子概率.xlsx")
+    weekday_df = pd.read_excel("星期好日子概率.xlsx")
+    day_df = pd.read_excel("日期好日子概率.xlsx")
+    moon_df = pd.read_excel("月相好日子概率.xlsx")
+    holiday_df = pd.read_excel("节假日好日子概率.xlsx")
     return weekday_df, day_df, moon_df, holiday_df# ========== 辅助函数 ==========
 def get_moon_phase(date):
     """根据日期计算月相"""
